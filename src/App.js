@@ -1,15 +1,15 @@
-import logo from "./logo.svg";
 import "./App.css";
+import bisseKuva from "./images/lager.png";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={bisseKuva} className="App-logo" alt="logo" />
         <p>Taa on miun sivu</p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://bisse.ninja"
           target="_blank"
           rel="noopener noreferrer"
         >
