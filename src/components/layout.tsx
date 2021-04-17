@@ -12,7 +12,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+type LayoutProps = {
+    children: any;
+};
+const Layout = ({ children }: LayoutProps) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
