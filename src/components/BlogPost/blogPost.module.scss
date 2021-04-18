@@ -1,0 +1,15 @@
+﻿@import "../../assets/variables";
+
+title {
+  color: #7b542a;
+}
+
+.blogPost {
+  padding: 8px;
+  margin: 2px;
+  background-color: $color-main;
+  
+  &.h1{
+    color: $color-text-headers;
+  }
+}

@@ -1,0 +1,35 @@
+﻿@import "../assets/variables";
+
+body {
+  font: 100% $font-stack;
+  color: $color-text-main;
+}
+
+.titleContainer{
+  margin: 0px auto;
+  margin-top: 30%;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
+}
+
+html {
+  background-image: url(../images/Beers.jpg);
+  background-repeat: no-repeat;
+  background-color: #291404;
+  p {
+    color: white;
+  }
+}
+a {
+  font-size: large;
+  font-weight: bold;
+  color: $color-text-headers;
+}
+h2 {
+  color: $color-text-headers;
+  margin: 8px 4px; 
+}
+
+main {
+  color: $color-text-main;
+}
