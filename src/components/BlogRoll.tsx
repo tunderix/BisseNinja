@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import { Link, graphql, StaticQuery } from 'gatsby';
+import BlogPost from './BlogPost';
 
 type BlogRollProps = {
   data: any;
@@ -12,9 +13,14 @@ const BlogRollComponent = ({ data }: BlogRollProps) => {
     <div>
       {posts &&
         posts.map(({ node: post }: any) => (
-          <li>
-            <span>{post.frontmatter.title}</span>
-          </li>
+          <BlogPost
+            key={post.frontmatter.title}
+            id={post.id}
+            title={post.frontmatter.title}
+            date={post.frontmatter.date}
+            html={post.excerpt}
+            path={post.frontmatter.path}
+          />
         ))}
     </div>
   );
