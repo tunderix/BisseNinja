@@ -1,29 +1,14 @@
 ﻿import React from 'react';
 import { Link, graphql, StaticQuery } from 'gatsby';
-import BlogPost from './BlogPost';
+import BlogRoll from './BlogRoll';
 
-type BlogRollProps = {
+type BlogRollContainerProps = {
   data: any;
 };
 
-const BlogRollComponent = ({ data }: BlogRollProps) => {
+const BlogRollContainer = ({ data }: BlogRollContainerProps) => {
   const { edges: posts } = data.allMarkdownRemark;
-
-  return (
-    <div>
-      {posts &&
-        posts.map(({ node: post }: any) => (
-          <BlogPost
-            key={post.frontmatter.title}
-            id={post.id}
-            title={post.frontmatter.title}
-            date={post.frontmatter.date}
-            html={post.excerpt}
-            path={post.frontmatter.path}
-          />
-        ))}
-    </div>
-  );
+  return <div>{posts && <BlogRoll posts={posts} />}</div>;
 };
 
 const query = () => (
@@ -36,6 +21,7 @@ const query = () => (
               excerpt(pruneLength: 400)
               id
               frontmatter {
+                path
                 title
                 date(formatString: "MMMM DD, YYYY")
               }
@@ -44,7 +30,7 @@ const query = () => (
         }
       }
     `}
-    render={(data) => <BlogRollComponent data={data} />}
+    render={(data) => <BlogRollContainer data={data} />}
   />
 );
 

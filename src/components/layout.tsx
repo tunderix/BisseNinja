@@ -10,6 +10,7 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import * as styles from './layout.module.scss';
+import Footer from './Footer/Footer';
 
 type LayoutProps = {
   children: any;
@@ -30,15 +31,6 @@ const Layout = ({ children }: LayoutProps) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div style={styles}>
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-            float: 'right'
-          }}
-        >
-          © {new Date().getFullYear()},{` `}
-          <a href="https://github.com/tunderix/">Ioni</a>
-        </footer>
       </div>
     </>
   );

@@ -18,7 +18,6 @@ const BlogPost = ({ title, date, html, id, path }: BlogPostProps) => {
           {title}
         </Link>
       )}
-
       <h2>{date}</h2>
       <div
         className="blog-post-content"
