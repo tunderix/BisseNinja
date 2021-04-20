@@ -1,5 +1,5 @@
 ---
-path: blog/newatlasseason
+path: /blog/newatlasseason
 date: 2021-04-20T16:14:07.895Z
 title: Pelien pellaamista
 ---
