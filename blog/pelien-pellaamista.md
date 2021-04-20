@@ -22,7 +22,7 @@ New atlas season will be starting soon! \
 
 > Essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-![timeroll](http://localhost:8000/assets/timeroll.png "TimeRolling")
+![timeroll](assets/role-healer.png "TimeRolling")
 
 ```
 const x = y; 
