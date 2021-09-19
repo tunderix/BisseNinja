@@ -7,9 +7,7 @@ interface IBlogPageProps {
   html: any;
 }
 
-type BlogPageProps = IBlogPageProps;
-
-const BlogPage: FunctionComponent<BlogPageProps> = (props) => {
+const BlogPage: FunctionComponent<IBlogPageProps> = (props) => {
   const { title, date, html } = props;
   return (
     <div className={blogPageStyles.blogPost}>

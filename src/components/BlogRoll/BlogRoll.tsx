@@ -1,12 +1,11 @@
 ﻿import React from 'react';
-import { Link, graphql, StaticQuery } from 'gatsby';
 import BlogPost from '../BlogPost';
 
 type BlogRollComponentProps = {
   posts: any;
 };
 
-const BlogRollComponent = ({ posts }: BlogRollComponentProps) => {
+const BlogRollComponent = ({ posts: posts }: BlogRollComponentProps) => {
   return (
     <div>
       {posts &&
