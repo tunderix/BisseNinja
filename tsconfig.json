@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -20,6 +20,7 @@
     "noEmit": true,
     "jsx": "react"
   },
+  "exclude": ["./node_modules", "./public", "./.cache", "./gatsby-config.ts", "./gatsby-node.ts", "./gatsby-browser.ts", "./gatsby-ssr.ts"],
   "include": [
     "src",
     "declarations.d.ts"

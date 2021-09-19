@@ -1,13 +1,13 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import * as styles from './layout.module.scss';
+import { FunctionComponent } from 'react';
 
 type HeaderProps = {
   siteTitle: string;
 };
 
-const Header = ({ siteTitle }: HeaderProps) => (
+const Header: FunctionComponent<HeaderProps> = ({ siteTitle }) => (
   <header
     style={{
       background: 'transparent',
@@ -30,13 +30,5 @@ const Header = ({ siteTitle }: HeaderProps) => (
     </div>
   </header>
 );
-
-Header.propTypes = {
-  siteTitle: PropTypes.string
-};
-
-Header.defaultProps = {
-  siteTitle: ``
-};
 
 export default Header;

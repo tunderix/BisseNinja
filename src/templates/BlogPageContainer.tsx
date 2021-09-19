@@ -1,19 +1,21 @@
-﻿import React from 'react';
+﻿import React, { FunctionComponent } from 'react';
 import { graphql } from 'gatsby';
 import BlogPage from './BlogPage';
-export default function Template({
-  data // this prop will be injected by the GraphQL query below.
-}: any) {
-  const { markdownRemark } = data; // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark;
-  return (
-    <div className="blog-post-container">
-      <BlogPage title={frontmatter.title} date={frontmatter.date} html={html} />
-    </div>
-  );
+
+interface ITemplateProps {
+  data: {
+    markdownRemark: {
+      frontmatter: {
+        title: string;
+        date: Date;
+      };
+      html: HTMLElement;
+    };
+  };
 }
+
 export const pageQuery = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     markdownRemark(id: {}, frontmatter: { path: { eq: $path } }) {
       frontmatter {
         date
@@ -24,3 +26,15 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+const Template: FunctionComponent<ITemplateProps> = ({ data }) => {
+  const { title, date } = data.markdownRemark.frontmatter;
+  const { html } = data.markdownRemark;
+
+  return (
+    <div className="blog-post-container">
+      <BlogPage title={title} date={date} html={html} />
+    </div>
+  );
+};
+export default Template;
