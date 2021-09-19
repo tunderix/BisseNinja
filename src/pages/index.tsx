@@ -4,10 +4,15 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BlogRoll from '../components/BlogRoll';
 import Footer from '../components/Footer/Footer';
+import { FunctionComponent } from 'react';
 
-const IndexPage = () => (
+type IIndexPageProps = {
+  siteTitle: string;
+};
+
+const IndexPage: FunctionComponent<IIndexPageProps> = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Home" lang="en" meta={[]} description="" />
     <BlogRoll />
     <Footer />
   </Layout>

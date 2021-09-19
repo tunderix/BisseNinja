@@ -1,11 +1,6 @@
 ﻿import React, { FunctionComponent } from 'react';
 
-// tslint:disable-next-line:no-empty-interface
-interface IFooterProps {}
-
-type FooterProps = IFooterProps;
-
-const Footer: FunctionComponent<FooterProps> = (props) => {
+const Footer: FunctionComponent = () => {
   return (
     <footer
       style={{
