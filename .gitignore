@@ -2,6 +2,7 @@
 
 .idea/
 .idea/sonarlint
+.idea/*
 
 # dependencies
 /node_modules
