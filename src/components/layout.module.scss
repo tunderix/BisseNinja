@@ -3,16 +3,35 @@
 body {
   font: 100% $font-stack;
   color: $color-text-main;
+  margin: 0; 
 }
 
-.titleContainer{
-  margin: 25% auto 0;
-  max-width: 960px;
+.headerImage {
+  background-image: url(../images/BisseNinjaHeader.png);
+  width: 24rem;
+  height: 24rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.titleContainer{ 
   padding: 1.45rem 1.0875rem;
+  background: transparent;
+  margin: 1rem auto 2rem;
+  text-align: left;
+}
+
+.title {
+  font-size: xxx-large;
+  color: $color-main;
+  text-decoration: auto;
+  font-family: $headlight-font;
 }
 
 .board{
-  background-image: url(../images/wood-wall-paper-1.jpg);
+  background-color: $color-black;
+  background-image: url(../images/Dust.png);
+  background-size: contain;
   height: 140px;
   margin-bottom: 20px;
 }

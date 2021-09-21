@@ -1,6 +1,4 @@
 
-;
-.prettierrc,2\0\20137a9e94744624390b6748bc96df5ca1579b71
 ?
 blog/pilikka.md,7\b\7b3f3bcfbb455734ee54e28bcb1eafe50a3471d2
 J
@@ -11,3 +9,21 @@ B
 blog/on-sun-set.md,d\9\d98ea4187516c0c3175f514d34740d128b67bf2a
 @
 blog/bring-me.md,f\d\fdf3d57e37a7b8f60dd928ec5c982da1a5151b67
+9
+	.eslintrc,4\b\4be5f5e3cea171c304090be92469b2f2cb51039a
+Q
+!src/components/BlogRoll/index.tsx,d\8\d8e717211256394bc047298f1002c519ffa73497
+R
+"src/templates/BlogPage.module.scss,1\0\1049dfffa39346ff677de97e45d5a9095839c903
+G
+static/admin/config.yml,5\f\5f49ac5d5bc4a219ea916ce7a2662edb9e110c2e
+<
+package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+=
+tsconfig.json,6\1\61ebb9fd6e8cf9082658121d5d81e297791dacd0
+D
+tsconfig-gatsby.json,c\9\c996774c96c624616abafa12f1a9213c0d2761b9
+9
+	yarn.lock,5\3\53585a096fe3a3b96321113856ae62602995a33b

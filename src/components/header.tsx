@@ -8,26 +8,12 @@ type HeaderProps = {
 };
 
 const Header: FunctionComponent<HeaderProps> = ({ siteTitle }) => (
-  <header
-    style={{
-      background: 'transparent',
-      marginBottom: `1rem`,
-      textAlign: 'center'
-    }}
-  >
-    <div className={styles.titleContainer}>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+  <header className={styles.titleContainer}>
+    <h1>
+      <Link className={styles.title} to="/">
+        <div className={styles.headerImage} />
+      </Link>
+    </h1>
   </header>
 );
 

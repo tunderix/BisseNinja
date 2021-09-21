@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import { Link } from 'gatsby';
 import * as styles from './blogPost.module.scss';
+import { motion } from 'framer-motion';
 
 type BlogPostProps = {
   title: string;
@@ -12,7 +13,13 @@ type BlogPostProps = {
 
 const BlogPost = ({ title, date, html, id, path }: BlogPostProps) => {
   return (
-    <div className={styles.blogPost}>
+    <motion.div
+      whileHover={{
+        scale: 1.04,
+        transition: { duration: 0.3 }
+      }}
+      className={styles.blogPost}
+    >
       {path && (
         <Link className="title has-text-primary is-size-4" to={path}>
           {title}
@@ -23,7 +30,7 @@ const BlogPost = ({ title, date, html, id, path }: BlogPostProps) => {
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: html }}
       />
-    </div>
+    </motion.div>
   );
 };
 
