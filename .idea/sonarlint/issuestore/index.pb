@@ -17,13 +17,7 @@ R
 "src/templates/BlogPage.module.scss,1\0\1049dfffa39346ff677de97e45d5a9095839c903
 G
 static/admin/config.yml,5\f\5f49ac5d5bc4a219ea916ce7a2662edb9e110c2e
-<
-package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-=
-tsconfig.json,6\1\61ebb9fd6e8cf9082658121d5d81e297791dacd0
 D
 tsconfig-gatsby.json,c\9\c996774c96c624616abafa12f1a9213c0d2761b9
-9
-	yarn.lock,5\3\53585a096fe3a3b96321113856ae62602995a33b
