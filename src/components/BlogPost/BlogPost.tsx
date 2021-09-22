@@ -6,12 +6,12 @@ import { motion } from 'framer-motion';
 type BlogPostProps = {
   title: string;
   date: string;
-  html: any;
-  id: string;
+  htmlString: any;
+  id?: string;
   path: string;
 };
 
-const BlogPost = ({ title, date, html, id, path }: BlogPostProps) => {
+const BlogPost = ({ title, date, htmlString, id, path }: BlogPostProps) => {
   return (
     <motion.div
       whileHover={{
@@ -28,7 +28,7 @@ const BlogPost = ({ title, date, html, id, path }: BlogPostProps) => {
       <h2>{date}</h2>
       <div
         className="blog-post-content"
-        dangerouslySetInnerHTML={{ __html: html }}
+        dangerouslySetInnerHTML={{ __html: htmlString }}
       />
     </motion.div>
   );

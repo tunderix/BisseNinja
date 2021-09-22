@@ -3,15 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { Button, ButtonProps } from './Button';
 
-const buttonStories: ComponentMeta<
-  ({
-    primary,
-    size,
-    backgroundColor,
-    label,
-    ...props
-  }: ButtonProps) => JSX.Element
-> = {
+const buttonStories: ComponentMeta<typeof Button> = {
   title: 'Example/Button',
   component: Button,
   argTypes: {

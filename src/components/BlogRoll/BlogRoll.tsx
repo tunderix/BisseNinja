@@ -15,7 +15,7 @@ const BlogRollComponent = ({ posts: posts }: BlogRollComponentProps) => {
             id={post.id}
             title={post.frontmatter.title}
             date={post.frontmatter.date}
-            html={post.excerpt}
+            htmlString={post.excerpt}
             path={post.frontmatter.path}
           />
         ))}
